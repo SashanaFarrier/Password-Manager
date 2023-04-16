@@ -6,17 +6,6 @@
   box-sizing: border-box;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.example {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
 body {
   display: grid;
   align-items: center;
@@ -57,6 +46,18 @@ main {
   justify-content: center;
   padding: 1em;
   background: #273549;
+}
+
+
+.vault .saved-data > .container::-webkit-scrollbar,
+.vault__info .card__content::-webkit-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.vault .saved-data > .container::-webkit-scrollbar,
+.vault__info .card__content::-webkit-scrollbar {
+  display: none;
 }
 
 .vault__info .card__content {
